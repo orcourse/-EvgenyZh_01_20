@@ -1,0 +1,24 @@
+$font: 'Open Sans', sans-serif;
+
+.wrapper{
+    font-family: $font;
+}
+
+@mixin centering {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wrapper{
+    @include centering;
+}
+
+@function division_by_2($arg){
+    @return ($arg/2);
+}
+
+header{
+    .header_top{
+        height: division_by_2(124px);
+    }
+}
